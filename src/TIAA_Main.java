@@ -42,7 +42,7 @@ public class TIAA_Main {
 		long estimatedTime = System.nanoTime() - startTime;
 		double elapsedSeconds = (double) estimatedTime / 1000000000.0;
 
-		// now we can print
+		// printing final result
 		System.out.println("Total Products: " + m1.totalProducts);
 		System.out.println("Total Time taken: " + elapsedSeconds);
 	}
