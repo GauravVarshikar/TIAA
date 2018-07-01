@@ -3,7 +3,7 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class ProductMaker implements Runnable {
 
-	Queue<String> conveyor = new ConcurrentLinkedQueue<>();
+	Queue<String> conveyor = new ConcurrentLinkedQueue<String>();
 	volatile int totalProducts = 0;
 	int countOfBolts, countofMachines, timeInSeconds;
 
@@ -34,7 +34,6 @@ public class ProductMaker implements Runnable {
 		return item;
 	}
 
-	@Override
 	public void run() {
 		int bolts = 0, machine = 0, products = 0;
 		String item;
